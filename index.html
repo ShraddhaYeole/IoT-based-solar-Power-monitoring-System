@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link to your CSS file -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background: #000; /* Black background */
+            color: #fff; /* White text */
+            padding: 10px 0;
+            text-align: center;
+            margin-bottom: 20px; /* Space below the header */
+        }
+
+        .section-header {
+            font-size: 2em; /* Adjust the size as needed */
+            font-weight: bold; /* Makes the text bold */
+            color: #fff; /* White text color */
+            background-color: #333; /* Black background */
+            margin-top: 20px; /* Space above the header */
+            margin-bottom: 10px; /* Space below the header */
+            padding: 10px; /* Padding around the header */
+            text-align: left; 
+        }
+
+        section {
+            margin: 20px;
+            padding: 20px;
+            background: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            margin: 10px 0 5px;
+        }
+
+        input {
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            padding: 10px;
+            background: #35f5001c;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #06cf74;
+        }
+
+        .contact-container {
+            display: flex;
+            align-items: flex-start;
+        }
+
+        .contact-form {
+            flex: 1;
+            margin-right: 20px;
+        }
+
+        .contact-image {
+            width: 150px; /* Adjust width as needed */
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Portfolio</h1> <!-- Full white color -->
+    </header>
+
+    <section class="details">
+        <h2 class="section-header">My Details</h2>
+        <img src="profile_photo.jpg" alt="Shraddha Yeole" class="contact-image">
+        <ul>
+            <li><strong>Name:</strong> Shraddha Yeole</li>
+            <li><strong>Phone:</strong> 9921579165</li>
+            <li><strong>Email:</strong> shraddhayeole04@gmail.com</li>
+            <li><strong>Address:</strong> Shravan Sector plot no 4 near dr darade hospital uttam nagar cidco Nashik, 422009</li>
+            <li><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/shraddha-yeole-20842118b">LinkedIn Profile</a></li>
+        </ul>
+    </section>
+
+    <section>
+        <h2 class="section-header">Education</h2>
+        <p><b>Bachelor of Engineering in Information Technology</b><br>
+            MET's Institute of Engineering<br>
+            from 07/2020 to 05/2023<br> CGPA: 8.81</p>
+
+        <p><b>Diploma In Computer Technology</b><br>
+            K. K. Wagh Polytechnic Nashik<br>
+            from 08/2018 to 11/2020<br> Percentage: 89.26</p>
+    </section>
+
+    <section>
+        <h2 class="section-header">Internships</h2>
+        <p><b>Android Development Intern at Aurelia Innovatives</b><br>
+            from 05/2019 to 06/2019<br>
+            - Completed my "Android Development with Java " course and developed a sample application as part of the internship.</p>
+
+        <p><b>Web Development Intern at Tech Solutions</b><br>
+            from 06/2022 to 08/2022<br>
+            - Worked on developing responsive web applications using HTML, CSS, and JavaScript.</p>
+    </section>
+
+    <section>
+        <h2 class="section-header">Skills</h2>
+        <ul>
+            <li>Programming Languages: Java, Python, C++</li>
+            <li>Web Technologies: HTML, CSS, JavaScript, PHP</li>
+            <li>Frameworks: React, Node.js</li>
+            <li>Database Management: MySQL, MongoDB</li>
+            <li>Tools: Git, Visual Studio Code, Android Studio</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2 class="section-header">Contact Me</h2>
+        <div class="contact-container">
+            <form action="contact.php" method="POST" enctype="multipart/form-data" class="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="phno">Phone :</label>
+                <input type="text" id="phno" name="phno" required>
+                
+                <label for="file">Upload File:</label>
+                <input type="file" id="file" name="file" required>
+                
+                <button type="submit">Submit</button>
+            </form>
+          
+        </div>
+    </section>
+
+    <footer>
+        <p style="text-align: center; margin-top: 20px;">&copy; 2023 Shraddha Yeole. All rights reserved.</p>
+    </footer>
+</body>
+</html>

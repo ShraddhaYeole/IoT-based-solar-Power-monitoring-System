@@ -1,0 +1,82 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: #000; /* Black background */
+    color: #fff; /* White text */
+    padding: 10px 0;
+    text-align: center;
+    margin-bottom: 20px; /* Space below the header */
+}
+
+.section-header {
+    font-size: 2em; /* Adjust the size as needed */
+    font-weight: bold; /* Makes the text bold */
+    color: #fff; /* White text color */
+    background-color: #333; /* Black background */
+    margin-top: 20px; /* Space above the header */
+    margin-bottom: 10px; /* Space below the header */
+    padding: 10px; /* Padding around the header */
+    text-align: left; 
+}
+
+section {
+    margin: 20px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin: 10px 0 5px;
+}
+
+input {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px;
+    background: #35f5001c;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #06cf74;
+}
+
+.contact-container {
+    display: flex;
+    align-items: flex-start;
+}
+
+.contact-form {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.contact-image {
+    width: 150px; /* Adjust width as needed */
+    height: auto;
+}
